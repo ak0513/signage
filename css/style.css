@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'YiSunShin Dotum L';
+	src: url('../fonts/YiSunShinDotumL.eot');
+	src: url('../fonts/YiSunShinDotumL.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/YiSunShinDotumL.woff2') format('woff2'),
+		url('../fonts/YiSunShinDotumL.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'YiSunShin Dotum B';
+	src: url('../fonts/YiSunShinDotumB.eot');
+	src: url('../fonts/YiSunShinDotumB.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/YiSunShinDotumB.woff2') format('woff2'),
+		url('../fonts/YiSunShinDotumB.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'YiSunShin Dotum M';
+	src: url('../fonts/YiSunShinDotumM.eot');
+	src: url('../fonts/YiSunShinDotumM.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/YiSunShinDotumM.woff2') format('woff2'),
+		url('../fonts/YiSunShinDotumM.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Chosun Centennial';
+	src: url('ChosunCentennial.eot');
+	src: url('ChosunCentennial.eot?#iefix') format('embedded-opentype'),
+		url('ChosunCentennial.woff2') format('woff2'),
+		url('ChosunCentennial.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
