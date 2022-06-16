@@ -1,3 +1,44 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @font-face {
 	font-family: 'YiSunShin Dotum L';
 	src: url('../fonts/YiSunShinDotumL.eot');
@@ -42,3 +83,67 @@
 	font-display: swap;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4rem;
+	line-height:1.5;
+	background-color: #ddd;
+}
+
+#wrap {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	width:1920px;
+	height:1080px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row > [class^=col] {
+	width: 100%;
+	flex-grow: 1;
+}
+
+.col-1 {max-width:8.3333%;}
+.col-2 {max-width:16.6666%;}
+.col-3 {max-width:25%;}
+.col-4 {max-width:33.3333%;}
+.col-5 {max-width:41.6666%;}
+.col-6 {max-width:50%;}
+.col-7 {max-width:58.3333%;}
+.col-8 {max-width:66.6666%;}
+.col-9 {max-width:75%;}
+.col-10 {max-width:83.3333%;}
+.col-11 {max-width:91.6666%;}
+.col-12 {max-width:100%;}
+
+.gutter1 {margin: calc(0.2rem * -1);}
+.gutter1 [class^=col] {padding:  0.2rem;}
+.gutter2 {margin: calc(0.5rem * -1);}
+.gutter2 [class^=col] {padding: var( 0.5rem);}
+.gutter3 {margin: calc(1.0rem * -1);}
+.gutter3 [class^=col] {padding: 1.0rem;}
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	/* #wrap {
+		height:100%;
+	} */
+}
