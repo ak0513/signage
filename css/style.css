@@ -40,48 +40,61 @@ img {
 }
 
 @font-face {
-	font-family: 'YiSunShin Dotum L';
+	font-family: 'YiSunShinDotumL';
 	src: url('../fonts/YiSunShinDotumL.eot');
 	src: url('../fonts/YiSunShinDotumL.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/YiSunShinDotumL.woff2') format('woff2'),
 		url('../fonts/YiSunShinDotumL.woff') format('woff');
-	font-weight: normal;
+	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'YiSunShin Dotum B';
-	src: url('../fonts/YiSunShinDotumB.eot');
-	src: url('../fonts/YiSunShinDotumB.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/YiSunShinDotumB.woff2') format('woff2'),
-		url('../fonts/YiSunShinDotumB.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'YiSunShin Dotum M';
+	font-family: 'YiSunShinDotum';
 	src: url('../fonts/YiSunShinDotumM.eot');
 	src: url('../fonts/YiSunShinDotumM.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/YiSunShinDotumM.woff2') format('woff2'),
 		url('../fonts/YiSunShinDotumM.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'YiSunShinDotum';
+	src: url('../fonts/YiSunShinDotumB.eot');
+	src: url('../fonts/YiSunShinDotumB.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/YiSunShinDotumB.woff2') format('woff2'),
+		url('../fonts/YiSunShinDotumB.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'ChosunCentennial';
+	src: url('../fonts/ChosunCentennial.eot');
+	src: url('../fonts/ChosunCentennial.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ChosunCentennial.woff2') format('woff2'),
+		url('../fonts/ChosunCentennial.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Chosun Centennial';
-	src: url('ChosunCentennial.eot');
-	src: url('ChosunCentennial.eot?#iefix') format('embedded-opentype'),
-		url('ChosunCentennial.woff2') format('woff2'),
-		url('ChosunCentennial.woff') format('woff');
-	font-weight: normal;
+	font-family: 'NotoSansKR';
+	src: url('../fonts/NotoSansKR-Medium.eot');
+	src: url('../fonts/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Medium.woff') format('woff');
+	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
+
 
 html {
 	font-size: 62.5%;
@@ -91,6 +104,9 @@ body {
 	font-size: 1.4rem;
 	line-height:1.5;
 	background-color: #ddd;
+	font-family: YiSunShinDotum, sans-serif;
+	font-weight: 400;
+	color: #191919;
 }
 
 #wrap {
@@ -131,19 +147,254 @@ body {
 .col-11 {max-width:91.6666%;}
 .col-12 {max-width:100%;}
 
-.gutter1 {margin: -0.2rem;}
-.gutter1 [class^=col] {padding:  0.2rem;}
-.gutter2 {margin: -0.5rem;}
-.gutter2 [class^=col] {padding: var( 0.5rem);}
-.gutter3 {margin: -1.0rem;}
-.gutter3 [class^=col] {padding: 1.0rem;}
+
+.h-tit {
+	height: 8.0rem;
+	padding: 0 2.0rem;
+	font-size: 5.0rem;
+	font-family: ChosunCentennial, sans-serif;
+	color: #fff;
+}
+
+.h-tit.type1 {
+	background-color: #29591b;
+}
+
+.h-subtit {
+	margin-left: 2.0rem;
+	font-size: 1.8rem;
+	letter-spacing: 1.8rem;
+}
+
+.menu-group {
+	display: flex;
+}
+
+.menu-item {
+	display: flex;
+	background-color: #fff;
+	flex: 1;
+}
+.menu-item + .menu-item {
+	margin-left: 4.0rem;
+}
 
 
 
+.menu-img-info {
+	position: absolute;
+	color: #777;
+	font-family: NotoSansKR, sans-serif;
+	font-weight: 700;
+}
+
+
+.menu-img.mo {
+	display: none;
+}
+
+.menu-img {
+	flex-shrink: 0;
+}
+
+.menu-tit {
+	display: flex;
+	align-items: center;
+	font-size: 6.6rem;
+	letter-spacing: -0.33rem;
+}
+
+.menu-subtit {
+	color: #777;
+	letter-spacing: -0.075rem;
+	font-family: NotoSansKR, sans-serif;
+	word-break: keep-all;
+	font-weight: 700;
+}
+
+.menu-badge {
+	display: inline-flex;
+	align-items: center;
+	margin-left: 2.0rem;
+	padding: 0 0.9rem;
+	background-color: #ed2f1a;
+	color: #fff;
+	letter-spacing: -0.007rem;
+	border-radius: 5px;
+	font-family: ChosunCentennial, sans-serif;
+	line-height: 1;
+}
+
+.menu-desc {
+	color: #5c3c17;
+	letter-spacing: -0.011rem;
+	line-height: 1.2;
+	font-weight: 700;
+	word-break: keep-all;
+}
+
+.menu-info-group {
+	position: relative;
+}
+
+.meun-price-unit {
+	margin-left: 0.5rem;
+}
+
+/* signage1 */
+.signage1 .menu-img {
+	width: 1320px;
+	height: 1080px;
+}
+
+.signage1 .meun-price {
+	margin-top: 7.0rem;
+	padding-top: 7.0rem;
+	border-top: 1px solid #dbdbdb;
+	font-size: 8.1rem;
+	letter-spacing: -0.2rem;
+}
+
+.signage1 .menu-badge {
+	height: 3.4rem;
+	font-size:2.8rem;
+}
+.signage1 .meun-price-unit {
+	font-size: 4.0rem;
+}
+
+.signage1 .menu-img-info {
+	bottom:6.0rem;
+	font-size: 1.8rem;
+	letter-spacing: -0.045rem;
+}
+
+.signage1 .menu-subtit {
+	margin-top: 1.5rem;
+	font-size: 3.0rem;
+}
+
+.signage1 .menu-desc {
+	margin-top: 2.0rem;
+	font-size: 2.2rem;
+}
+
+.signage1 .menu-info-group {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 0 4.6rem 4.0rem;
+}
+
+.signage1 .menu-info {
+	margin-top: 25.0rem;
+}
+
+/* signage2 */
+.signage2 .container {
+	padding: 4.0rem;
+}
+
+.signage2 .row {
+	margin: -2.0rem;
+}
+
+.signage2 .col {
+	padding: 2.0rem;
+}
+
+.signage2 .menu-img {
+	width: 900px;
+	height: 720px;
+}
+
+.signage2 .menu-item {
+	display: block;
+}
+
+.signage2 .menu-tit {
+	font-size: 5.5rem;
+}
+
+.signage2 .menu-badge {
+	height: 2.9rem;
+	font-size: 2.3rem;
+}
+
+.signage2 .menu-subtit {
+	margin-top: 1.0rem;
+	font-size: 2.2rem;
+}
+
+.signage2 .menu-desc {
+	margin-top: 1.0rem;
+	font-size: 1.6rem;
+}
+
+.signage2 .menu-info-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 28.0rem;
+	padding: 0 3.0rem;
+}
+
+.signage2 .menu-img-info {
+	top:1.0rem;
+	right:3.0rem;
+}
+
+.signage2 .meun-price {
+	font-size: 6.56rem;
+}
+
+.signage2 .meun-price-unit {
+	font-size: 3.2rem;
+}
+
+
+/* signage3 */
+.signage3 .container {
+	padding: 2.0rem;
+}
+
+.signage3 .row {
+	margin: -1.0rem;
+}
+
+.signage3 .col {
+	padding: 1.0rem;
+}
 
 
 @media only screen and (max-width: 1024px) {
-	/* #wrap {
-		height:100%;
-	} */
+	#wrap {
+		width: max(360px, 100%);
+		height: 100%;
+	}
+
+	.menu-img.pc {
+		display: none;
+	}
+	.menu-img.mo {
+		display: block;
+	}
+
+	.menu-item {
+		display: block;
+	}
+
+	.menu .menu-img {
+		width: 100%;
+		height: auto;
+	}
+
+	.menu-info {
+		margin-top: 6.0rem;
+	}
+
+	.menu-tit {
+		font-size: 2.6rem;
+	}
+	
 }
