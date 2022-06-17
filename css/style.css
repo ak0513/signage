@@ -361,7 +361,6 @@ body {
 }
 
 .signage3 .row {
-	flex-grow: 1;
 	margin: -1.0rem;
 }
 
@@ -369,13 +368,12 @@ body {
 	padding: 1.0rem;
 }
 
-.signage3 .menu {
-	height: 100%;
-}
-
 .signage3 .menu-group {
 	flex-direction: column;
-	height: 100%;
+}
+
+.signage3 .menu-item {
+	padding: 6.5rem 0 6.5rem 4.0rem;
 }
 
 .signage3 .menu-item + .menu-item {
