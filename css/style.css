@@ -166,10 +166,12 @@ body {
 	letter-spacing: 1.8rem;
 }
 
+/* 메뉴 그룹 */
 .menu-group {
 	display: flex;
 }
 
+/* 메뉴 항목 */
 .menu-item {
 	display: flex;
 	background-color: #fff;
@@ -179,16 +181,7 @@ body {
 	margin-left: 4.0rem;
 }
 
-
-
-.menu-img-info {
-	position: absolute;
-	color: #777;
-	font-family: NotoSansKR, sans-serif;
-	font-weight: 700;
-}
-
-
+/* 메뉴 이미지 */
 .menu-img.mo {
 	display: none;
 }
@@ -197,10 +190,21 @@ body {
 	flex-shrink: 0;
 }
 
+.menu-img-info {
+	position: absolute;
+	color: #777;
+	font-family: NotoSansKR, sans-serif;
+	font-weight: 700;
+}
+
+/* 메뉴 상세 설명 */
+.menu-info-group {
+	position: relative;
+}
+
 .menu-tit {
 	display: flex;
 	align-items: center;
-	font-size: 6.6rem;
 	letter-spacing: -0.33rem;
 }
 
@@ -233,10 +237,6 @@ body {
 	word-break: keep-all;
 }
 
-.menu-info-group {
-	position: relative;
-}
-
 .meun-price-unit {
 	margin-left: 0.5rem;
 }
@@ -247,36 +247,10 @@ body {
 	height: 1080px;
 }
 
-.signage1 .meun-price {
-	margin-top: 7.0rem;
-	padding-top: 7.0rem;
-	border-top: 1px solid #dbdbdb;
-	font-size: 8.1rem;
-	letter-spacing: -0.2rem;
-}
-
-.signage1 .menu-badge {
-	height: 3.4rem;
-	font-size:2.8rem;
-}
-.signage1 .meun-price-unit {
-	font-size: 4.0rem;
-}
-
 .signage1 .menu-img-info {
 	bottom:6.0rem;
 	font-size: 1.8rem;
 	letter-spacing: -0.045rem;
-}
-
-.signage1 .menu-subtit {
-	margin-top: 1.5rem;
-	font-size: 3.0rem;
-}
-
-.signage1 .menu-desc {
-	margin-top: 2.0rem;
-	font-size: 2.2rem;
 }
 
 .signage1 .menu-info-group {
@@ -288,6 +262,37 @@ body {
 
 .signage1 .menu-info {
 	margin-top: 25.0rem;
+}
+
+.signage1 .menu-tit {
+	font-size: 6.6rem;
+}
+
+.signage1 .menu-subtit {
+	margin-top: 1.5rem;
+	font-size: 3.0rem;
+}
+
+.signage1 .menu-badge {
+	height: 3.4rem;
+	font-size:2.8rem;
+}
+
+.signage1 .menu-desc {
+	margin-top: 2.0rem;
+	font-size: 2.2rem;
+}
+
+.signage1 .meun-price {
+	margin-top: 7.0rem;
+	padding-top: 7.0rem;
+	border-top: 1px solid #dbdbdb;
+	font-size: 8.1rem;
+	letter-spacing: -0.2rem;
+}
+
+.signage1 .meun-price-unit {
+	font-size: 4.0rem;
 }
 
 /* signage2 */
@@ -303,32 +308,18 @@ body {
 	padding: 2.0rem;
 }
 
+.signage2 .menu-item {
+	display: block;
+}
+
 .signage2 .menu-img {
 	width: 900px;
 	height: 720px;
 }
 
-.signage2 .menu-item {
-	display: block;
-}
-
-.signage2 .menu-tit {
-	font-size: 5.5rem;
-}
-
-.signage2 .menu-badge {
-	height: 2.9rem;
-	font-size: 2.3rem;
-}
-
-.signage2 .menu-subtit {
-	margin-top: 1.0rem;
-	font-size: 2.2rem;
-}
-
-.signage2 .menu-desc {
-	margin-top: 1.0rem;
-	font-size: 1.6rem;
+.signage2 .menu-img-info {
+	top:1.0rem;
+	right:3.0rem;
 }
 
 .signage2 .menu-info-group {
@@ -339,9 +330,23 @@ body {
 	padding: 0 3.0rem;
 }
 
-.signage2 .menu-img-info {
-	top:1.0rem;
-	right:3.0rem;
+.signage2 .menu-tit {
+	font-size: 5.5rem;
+}
+
+.signage2 .menu-subtit {
+	margin-top: 1.0rem;
+	font-size: 2.2rem;
+}
+
+.signage2 .menu-badge {
+	height: 2.9rem;
+	font-size: 2.3rem;
+}
+
+.signage2 .menu-desc {
+	margin-top: 1.0rem;
+	font-size: 1.6rem;
 }
 
 .signage2 .meun-price {
@@ -373,14 +378,16 @@ body {
 		height: 100%;
 	}
 
+	/* 메뉴 항목 */
+	.menu-item {
+		display: block;
+	}
+
+	/* 메뉴 이미지 */
 	.menu-img.pc {
 		display: none;
 	}
 	.menu-img.mo {
-		display: block;
-	}
-
-	.menu-item {
 		display: block;
 	}
 
@@ -389,6 +396,7 @@ body {
 		height: auto;
 	}
 
+	/* 메뉴 상세 설명 */
 	.menu-info {
 		margin-top: 6.0rem;
 	}
@@ -396,5 +404,4 @@ body {
 	.menu-tit {
 		font-size: 2.6rem;
 	}
-	
 }
