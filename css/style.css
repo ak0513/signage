@@ -237,6 +237,7 @@ body {
 	margin-left: 0.5rem;
 }
 
+
 /* signage1 */
 .signage1 .menu-img {
 	width: 1320px;
@@ -360,11 +361,64 @@ body {
 }
 
 .signage3 .row {
+	flex-grow: 1;
 	margin: -1.0rem;
 }
 
 .signage3 .col {
 	padding: 1.0rem;
+}
+
+.signage3 .menu {
+	height: 100%;
+}
+
+.signage3 .menu-group {
+	flex-direction: column;
+	height: 100%;
+}
+
+.signage3 .menu-item + .menu-item {
+	margin-left: 0;
+	border-top:1px solid #dbdbdb;
+}
+
+.signage3 .menu-img {
+	width: 350px;
+	height: 350px;
+}
+
+.signage3 .menu-info-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.signage2 .menu-tit {
+	font-size: 5.5rem;
+}
+
+.signage2 .menu-subtit {
+	margin-top: 1.0rem;
+	font-size: 2.2rem;
+}
+
+.signage2 .menu-badge {
+	height: 2.9rem;
+	font-size: 2.3rem;
+}
+
+.signage2 .menu-desc {
+	margin-top: 1.0rem;
+	font-size: 1.6rem;
+}
+
+.signage2 .meun-price {
+	font-size: 6.56rem;
+}
+
+.signage2 .meun-price-unit {
+	font-size: 3.2rem;
 }
 
 
