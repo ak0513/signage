@@ -115,6 +115,7 @@ body {
 
 /* 레이아웃 */
 #wrap {
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
