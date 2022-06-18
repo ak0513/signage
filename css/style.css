@@ -188,11 +188,13 @@ body {
 	background-color: #222;
 }
 
+
 /* 메뉴 그룹 */
 .menu-group {
 	display: flex;
 	background-color: #fff;
 }
+
 
 /* 메뉴 항목 */
 .menu-item {
@@ -203,6 +205,7 @@ body {
 .menu-item + .menu-item {
 	margin-left: 4.0rem;
 }
+
 
 /* 메뉴 이미지 */
 .menu-img.mo {
@@ -222,6 +225,7 @@ body {
 	font-weight: 700;
 	letter-spacing: -0.013rem;
 }
+
 
 /* 메뉴 상세 설명 */
 .menu-info-group {
@@ -338,6 +342,7 @@ body {
 .signage1 .meun-price-unit {
 	font-size: 4.0rem;
 }
+
 
 /* signage2 */
 .signage2 {
@@ -579,6 +584,7 @@ body {
 		height: auto;
 	}
 
+
 	/* 메뉴 상세 설명 */
 	.menu-info {
 		margin-top: 0;
@@ -616,6 +622,7 @@ body {
 		font-size: 2.0rem;
 	}
 
+
 	/* signage1 */
 	.signage1 .menu-item {
 		flex-direction: column;
@@ -642,6 +649,7 @@ body {
 		padding-top: 5.0rem;
 	}
 
+
 	/* signage2 */
 	.signage2 .menu-item {
 		flex-direction: column;
@@ -652,7 +660,7 @@ body {
 		padding: 5.0rem 3.0rem;
 	}
 
-	
+
 	/* signage3 */
 	.signage3 .menu-group,
 	.signage4 .menu-group,
@@ -675,11 +683,13 @@ body {
 		padding: 4.5rem 0 4.4rem;
 	}
 
+
 	/* signage4 */
 	.signage4 .menu-img {
 		width: 180px;
 		height: 180px;
 	}
+
 
 	/* signage5 */
 	.signage5 .menu-img {
@@ -687,6 +697,7 @@ body {
 		height: 100px;
 	}
 }
+
 
 
 @media only screen and (max-width: 640px) {
@@ -741,7 +752,7 @@ body {
 		align-self: flex-end;
 		margin-top: 1.0rem;
 	}
-	
+
 
 	/* 메뉴 이미지 */
 	.menu-img.pc {
@@ -750,6 +761,7 @@ body {
 	.menu-img.mo {
 		display: block;
 	}
+
 
 	/* signage1 */
 	.signage1 .menu-info {
@@ -761,10 +773,12 @@ body {
 		padding-top: 3.5rem;
 	}
 
+
 	/* signage2 */
 	.signage2 .menu-info-group {
 		padding: 3.2rem 1.0rem;
 	}
+
 
 	/* signage3 */
 	.signage3 .menu-item {
@@ -780,6 +794,7 @@ body {
 		height: 150px;
 	}
 
+
 	/* signage4 */
 	.signage4 .menu-item {
 		padding: 1.2rem 0 1.1rem;
@@ -794,6 +809,7 @@ body {
 		height: 120px;
 	}
 
+	
 	/* signage5 */
 	.signage5 .menu-item {
 		padding: 0.9rem 0 0.8rem;
