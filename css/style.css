@@ -270,6 +270,10 @@ body {
 	word-break: keep-all;
 }
 
+.meun-price {
+	flex-shrink: 0;
+}
+
 .meun-price-unit {
 	margin-left: 0.5rem;
 }
