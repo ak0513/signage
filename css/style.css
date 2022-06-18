@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
 	font-family: 'YiSunShinDotumL';
 	src: url('../fonts/YiSunShinDotumL.eot');
@@ -60,6 +61,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 *::before,
 *::after {
 	box-sizing: border-box;
@@ -69,17 +71,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 ol, ul, li {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	table-layout: fixed;
 	border-collapse: collapse;
@@ -154,8 +160,6 @@ body {
 	max-width:100%;
 }
 
-
-
 .h-tit {
 	height: 8.0rem;
 	padding: 0 2.0rem;
@@ -216,6 +220,7 @@ body {
 	color: #777;
 	font-family: NotoSansKR, sans-serif;
 	font-weight: 700;
+	letter-spacing: -0.013rem;
 }
 
 /* 메뉴 상세 설명 */
@@ -238,8 +243,6 @@ body {
 	word-break: keep-all;
 	font-weight: 700;
 }
-
-
 
 .menu-badge {
 	display: inline-flex;
@@ -548,8 +551,8 @@ body {
 @media only screen and (max-width: 1024px) {
 	#wrap {
 		width: max(360px, 100%);
-		height: 100%;
-		padding: 1.0rem;
+		height: auto;
+		padding: 1.5rem;
 	}
 
 	.row {
@@ -560,26 +563,16 @@ body {
 		margin-top: 1.0rem;
 	}
 
-	.gutter2 {
+	.gutter2,
+	.gutter3 {
 		margin: 0;
 	}
-	.gutter2 .col {
+
+	.gutter2 .col,
+	.gutter3 .col {
 		width: 100%;
 		max-width: 100%;
 		margin: 0;
-	}
-
-	/* 메뉴 항목 */
-	.menu-item {
-		display: block;
-	}
-
-	/* 메뉴 이미지 */
-	.menu-img.pc {
-		display: none;
-	}
-	.menu-img.mo {
-		display: block;
 	}
 
 	.menu .menu-img {
@@ -589,39 +582,174 @@ body {
 
 	/* 메뉴 상세 설명 */
 	.menu-info {
-		margin-top: 6.0rem;
+		margin-top: 0;
 	}
 
-	.menu-tit {
-		font-size: 2.6rem;
-	}
-
-
-	/* signage2 */
-	.signage2 .menu-info-group {
-		height: auto;
-		padding: 3.2rem 1.0rem;
-	}
-
-	.signage2 .menu-tit {
+	[class*='signage'] .menu-tit {
 		font-size: 3.8rem;
 	}
 
-	.signage2 .menu-subtit {
+	[class*='signage'] .menu-subtit {
 		margin-top: 0;
 		font-size: 1.6rem;
 	}
+
+	[class*='signage'] .menu-badge {
+		height: 2.4rem;
+		margin-left: 1.0rem;
+		font-size: 1.6rem;
+	}
 	
-	.signage2 .menu-desc {
+	[class*='signage'] .menu-desc {
 		margin-top: 0;
 		font-size: 1.4rem;
 	}
 
-	.signage2 .meun-price {
+	[class*='signage'] .meun-price {
 		font-size: 4.5rem;
 	}
 	
-	.signage2 .meun-price-unit {
+	[class*='signage'] .meun-price-unit {
 		font-size: 2.0rem;
+	}
+
+
+	/* signage1 */
+	.signage1 .menu-item {
+		flex-direction: column;
+	}
+
+	.signage1 .menu-img-info {
+		bottom: 1.0rem;
+	}
+
+	.signage1 .menu-info-group {
+		padding:0 3.0rem 10.0rem;
+	}
+
+	.signage1 .menu-info {
+		margin-top: 10.0rem;
+	}
+
+	.signage1 .menu-tit {
+		font-size: 4.2rem;
+	}
+
+	.signage1 .meun-price {
+		margin-top: 5.0rem;
+		padding-top: 5.0rem;
+	}
+
+	/* signage2 */
+	.signage2 .menu-item {
+		flex-direction: column;
+	}
+
+	.signage2 .menu-info-group {
+		height: auto;
+		padding: 5.0rem 3.0rem;
+	}
+
+	
+	/* signage3 */
+	.signage3 .menu-group {
+		padding: 0 3.0rem;
+	}
+
+	.signage3 .menu-info-group {
+		margin-left: 2.0rem;
+	}
+
+	.signage3 .menu-img {
+		width: 280px;
+		height: 280px;
+	}
+
+	.signage3 .menu-item {
+		padding: 4.5rem 0 4.4rem;
+	}
+
+	/* signage4 */
+	.signage4 .menu-group {
+		padding: 0 3.0rem;
+	}
+
+	.signage4 .menu-info-group {
+		margin-left: 2.0rem;
+	}
+
+	.signage4 .menu-img {
+		width: 200px;
+		height: 200px;
+	}
+
+	/* signage5 */
+	.signage5 .menu-group {
+		padding: 0 3.0rem;
+	}
+
+	.signage5 .menu-info-group {
+		margin-left: 2.0rem;
+	}
+
+	.signage5 .menu-img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
+@media only screen and (max-width: 640px) {
+	[class*='signage'] .menu-tit {
+		font-size: 2.6rem;
+		letter-spacing: -0.2rem;
+	}
+
+	[class*='signage'] .menu-badge {
+		height: 1.6rem;
+		padding: 0 0.6rem;
+		font-size: 1.3rem;
+		border-radius: 3px;
+	}
+
+	[class*='signage'] .meun-price {
+		font-size: 3.0rem;
+	}
+
+	[class*='signage'] .menu-img-info {
+		font-size: 1.2rem;
+	}
+	
+
+	/* 메뉴 이미지 */
+	.menu-img.pc {
+		display: none;
+	}
+	.menu-img.mo {
+		display: block;
+	}
+
+	/* signage1 */
+	.signage1 .menu-info {
+		margin-top: 6.0rem;
+	}
+
+	.signage1 .meun-price {
+		margin-top: 3.5rem;
+		padding-top: 3.5rem;
+	}
+
+	/* signage3 */
+	.signage3 .menu-item {
+		padding: 2.8rem 0 2.7rem;
+	}
+
+	.signage3 .menu-item:last-child {
+		padding-bottom: 2.8rem;
+	}
+	
+	.signage3 .menu-img {
+		width: 130px;
+		height: 130px;
 	}
 }
