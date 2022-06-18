@@ -104,7 +104,6 @@ html {
 body {
 	font-size: 1.4rem;
 	line-height:1.5;
-	background-color: #ddd;
 	font-family: YiSunShinDotum, sans-serif;
 	font-weight: 400;
 	color: #191919;
@@ -116,6 +115,7 @@ body {
 	flex-grow: 1;
 	width:1920px;
 	height:1080px;
+	background-color: #ddd;
 }
 
 .container {
@@ -724,8 +724,6 @@ body {
 
 	[class*='signage'] .menu-info-group {
 		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
 		flex-grow: 1;
 	}
 	
