@@ -122,26 +122,38 @@ body {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 }
 
-.row > [class^=col] {
+.col {
 	width: 100%;
+	max-width:50%;
 	flex-grow: 1;
 	background-color: #222;
 }
 
-.col-1 {max-width:8.3333%;}
-.col-2 {max-width:16.6666%;}
-.col-3 {max-width:25%;}
-.col-4 {max-width:33.3333%;}
-.col-5 {max-width:41.6666%;}
-.col-6 {max-width:50%;}
-.col-7 {max-width:58.3333%;}
-.col-8 {max-width:66.6666%;}
-.col-9 {max-width:75%;}
-.col-10 {max-width:83.3333%;}
-.col-11 {max-width:91.6666%;}
-.col-12 {max-width:100%;}
+.gutter2 {
+	margin: -2.0rem;
+}
+
+.gutter2 .col {
+	width: calc(50% - 4.0rem);
+	margin: 2.0rem;
+}
+
+.gutter3 {
+	margin: -1.0rem;
+}
+
+.gutter3 .col {
+	width: calc(50% - 2.0rem);
+	margin: 1.0rem;
+}
+
+.signage1 .col {
+	max-width:100%;
+}
+
 
 
 .h-tit {
@@ -188,13 +200,22 @@ body {
 	margin-left: 4.0rem;
 }
 
+.signage3 .menu-item + .menu-item,
+.signage4 .menu-item + .menu-item,
+.signage5 .menu-item + .menu-item {
+	margin-left: 0;
+	border-top:1px solid #dbdbdb;
+}
+
 /* 메뉴 이미지 */
 .menu-img.mo {
 	display: none;
 }
 
 .menu-img {
+	overflow: hidden;
 	flex-shrink: 0;
+	border-radius: 10px;
 }
 
 .menu-img-info {
@@ -206,6 +227,7 @@ body {
 
 /* 메뉴 상세 설명 */
 .menu-info-group {
+	display: flex;
 	position: relative;
 }
 
@@ -238,11 +260,11 @@ body {
 	font-weight: 400;
 }
 
-.menu-badge.best {
+.menu-badge.type1 {
 	background-color: #ed2f1a;
 }
 
-.menu-badge.new {
+.menu-badge.type2 {
 	background-color: #58af21;
 }
 
@@ -262,6 +284,7 @@ body {
 .signage1 .menu-img {
 	width: 1320px;
 	height: 1080px;
+	border-radius: 0;
 }
 
 .signage1 .menu-img-info {
@@ -271,7 +294,6 @@ body {
 }
 
 .signage1 .menu-info-group {
-	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	padding: 0 4.6rem 4.0rem;
@@ -314,16 +336,8 @@ body {
 }
 
 /* signage2 */
-.signage2 .container {
+.signage2 {
 	padding: 4.0rem;
-}
-
-.signage2 .row {
-	margin: -2.0rem;
-}
-
-.signage2 .col {
-	padding: 2.0rem;
 }
 
 .signage2 .menu-item {
@@ -341,7 +355,6 @@ body {
 }
 
 .signage2 .menu-info-group {
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 28.0rem;
@@ -377,16 +390,8 @@ body {
 
 
 /* signage3 */
-.signage3 .container {
+.signage3 {
 	padding: 2.0rem;
-}
-
-.signage3 .row {
-	margin: -1.0rem;
-}
-
-.signage3 .col {
-	padding: 1.0rem;
 }
 
 .signage3 .menu-group {
@@ -398,20 +403,16 @@ body {
 	padding: 6.5rem 0 6.4rem;
 }
 
-.signage3 .menu-item + .menu-item {
-	margin-left: 0;
-	border-top:1px solid #dbdbdb;
+.signage3 .menu-item:last-child {
+	padding-bottom: 6.5rem;
 }
 
 .signage3 .menu-img {
-	overflow: hidden;
 	width: 350px;
 	height: 350px;
-	border-radius: 10px;
 }
 
 .signage3 .menu-info-group {
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-grow: 1;
@@ -451,16 +452,8 @@ body {
 
 
 /* signage4 */
-.signage4 .container {
+.signage4 {
 	padding: 2.0rem;
-}
-
-.signage4 .row {
-	margin: -1.0rem;
-}
-
-.signage4 .col {
-	padding: 1.0rem;
 }
 
 .signage4 .menu-group {
@@ -471,21 +464,16 @@ body {
 .signage4 .menu-item {
 	padding: 3.0rem 0 2.9rem;
 }
-
-.signage4 .menu-item + .menu-item {
-	margin-left: 0;
-	border-top:1px solid #dbdbdb;
+.signage4 .menu-item:last-child {
+	padding-bottom: 3.0rem;
 }
 
 .signage4 .menu-img {
-	overflow: hidden;
 	width: 180px;
 	height: 180px;
-	border-radius: 10px;
 }
 
 .signage4 .menu-info-group {
-	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	flex-grow: 1;
@@ -528,17 +516,6 @@ body {
 	padding: 2.0rem;
 }
 
-.signage5 .row {
-	margin: -1.0rem;
-	flex-grow: 1;
-}
-
-.signage5 .col {
-	width: calc(50% - 2.0rem);
-	padding: 0;
-	margin: 1.0rem;
-}
-
 .signage5 .menu-group {
 	flex-direction: column;
 	padding: 0 3.0rem;
@@ -548,20 +525,16 @@ body {
 	padding: 3.0rem 0 2.9rem;
 }
 
-.signage5 .menu-item + .menu-item {
-	margin-left: 0;
-	border-top:1px solid #dbdbdb;
+.signage5 .menu-item:last-child {
+	padding-bottom: 3.0rem;
 }
 
 .signage5 .menu-img {
-	overflow: hidden;
 	width: 100px;
 	height: 100px;
-	border-radius: 10px;
 }
 
 .signage5 .menu-info-group {
-	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-grow: 1;
@@ -603,6 +576,24 @@ body {
 	#wrap {
 		width: max(360px, 100%);
 		height: 100%;
+		padding: 1.0rem;
+	}
+
+	.row {
+		flex-direction: column;
+	}
+
+	.row .col + .col {
+		margin-top: 1.0rem;
+	}
+
+	.gutter2 {
+		margin: 0;
+	}
+	.gutter2 .col {
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
 	}
 
 	/* 메뉴 항목 */
@@ -630,5 +621,16 @@ body {
 
 	.menu-tit {
 		font-size: 2.6rem;
+	}
+
+
+	/* signage2 */
+	.signage2 .menu-info-group {
+		height: auto;
+		padding: 3.2rem 1.0rem;
+	}
+
+	.signage2 .menu-tit {
+		font-size: 5.5rem;
 	}
 }
