@@ -700,6 +700,10 @@ body {
 
 
 @media only screen and (max-width: 640px) {
+	#wrap {
+		padding: 1.0rem;
+	}
+
 	[class*='signage'] .menu-tit {
 		font-size: 2.6rem;
 		letter-spacing: -0.2rem;
@@ -747,9 +751,30 @@ body {
 	.signage3 .menu-item:last-child {
 		padding-bottom: 2.8rem;
 	}
-	
+
 	.signage3 .menu-img {
-		width: 130px;
-		height: 130px;
+		width: 150px;
+		height: 150px;
+	}
+
+	/* signage4 */
+	.signage4 .menu-item {
+		padding: 1.2rem 0 1.1rem;
+	}
+
+	.signage4 .menu-item:last-child {
+		padding-bottom: 1.2rem;
+	}
+	
+	.signage4 .menu-img {
+		width: 120px;
+		height: 120px;
+	}
+
+	/* signage5 */
+	.signage5 .menu-info-group {
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-between;
 	}
 }
