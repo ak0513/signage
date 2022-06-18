@@ -200,13 +200,6 @@ body {
 	margin-left: 4.0rem;
 }
 
-.signage3 .menu-item + .menu-item,
-.signage4 .menu-item + .menu-item,
-.signage5 .menu-item + .menu-item {
-	margin-left: 0;
-	border-top:1px solid #dbdbdb;
-}
-
 /* 메뉴 이미지 */
 .menu-img.mo {
 	display: none;
@@ -245,6 +238,8 @@ body {
 	word-break: keep-all;
 	font-weight: 700;
 }
+
+
 
 .menu-badge {
 	display: inline-flex;
@@ -381,7 +376,7 @@ body {
 }
 
 .signage2 .meun-price {
-	font-size: 6.56rem;
+	font-size: 6.5rem;
 }
 
 .signage2 .meun-price-unit {
@@ -401,6 +396,13 @@ body {
 
 .signage3 .menu-item {
 	padding: 6.5rem 0 6.4rem;
+}
+
+.signage3 .menu-item + .menu-item,
+.signage4 .menu-item + .menu-item,
+.signage5 .menu-item + .menu-item {
+	margin-left: 0;
+	border-top:1px solid #dbdbdb;
 }
 
 .signage3 .menu-item:last-child {
@@ -425,17 +427,19 @@ body {
 }
 
 .signage3 .menu-subtit {
-	margin-top: 1.0rem;
 	font-size: 2.0rem;
 }
 
-.signage3 .menu-badge {
+.signage3 .menu-badge,
+.signage4 .menu-badge,
+.signage5 .menu-badge {
 	height: 3.0rem;
 	font-size: 2.4rem;
 }
 
-.signage3 .menu-desc {
-	margin-top: 1.0rem;
+.signage3 .menu-desc,
+.signage4 .menu-desc,
+.signage5 .menu-desc {
 	font-size: 1.6rem;
 	color: #29591b;
 	letter-spacing: -0.08rem;
@@ -446,6 +450,8 @@ body {
 	text-align: right;
 }
 
+.signage4 .meun-price-unit,
+.signage5 .meun-price-unit,
 .signage3 .meun-price-unit {
 	font-size: 3.0rem;
 }
@@ -480,34 +486,21 @@ body {
 	margin-left: 4.0rem;
 }
 
-.signage4 .menu-tit {
+.signage4 .menu-tit,
+.signage5 .menu-tit {
 	font-size: 3.6rem;
 	font-weight: 400;
 	line-height: 1.3;
 }
 
-.signage4 .menu-subtit {
+.signage4 .menu-subtit,
+.signage5 .menu-subtit {
 	font-size: 1.6rem;
-}
-
-.signage4 .menu-badge {
-	height: 3.0rem;
-	font-size: 2.4rem;
-}
-
-.signage4 .menu-desc {
-	font-size: 1.6rem;
-	color: #29591b;
-	letter-spacing: -0.08rem;
 }
 
 .signage4 .meun-price {
 	font-size: 4.5rem;
 	text-align: right;
-}
-
-.signage4 .meun-price-unit {
-	font-size: 3.0rem;
 }
 
 
@@ -541,35 +534,11 @@ body {
 	margin-left: 3.2rem;
 }
 
-.signage5 .menu-tit {
-	font-size: 3.6rem;
-	font-weight: 400;
-	line-height: 1.3;
-}
-
-.signage5 .menu-subtit {
-	font-size: 1.6rem;
-}
-
-.signage5 .menu-badge {
-	height: 3.0rem;
-	font-size: 2.4rem;
-}
-
-.signage5 .menu-desc {
-	font-size: 1.6rem;
-	color: #29591b;
-	letter-spacing: -0.08rem;
-}
-
 .signage5 .meun-price {
 	font-size: 4.0rem;
 	text-align: right;
 }
 
-.signage5 .meun-price-unit {
-	font-size: 3.0rem;
-}
 
 
 @media only screen and (max-width: 1024px) {
@@ -631,6 +600,24 @@ body {
 	}
 
 	.signage2 .menu-tit {
-		font-size: 5.5rem;
+		font-size: 3.8rem;
+	}
+
+	.signage2 .menu-subtit {
+		margin-top: 0;
+		font-size: 1.6rem;
+	}
+	
+	.signage2 .menu-desc {
+		margin-top: 0;
+		font-size: 1.4rem;
+	}
+
+	.signage2 .meun-price {
+		font-size: 4.5rem;
+	}
+	
+	.signage2 .meun-price-unit {
+		font-size: 2.0rem;
 	}
 }
