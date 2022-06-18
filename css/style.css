@@ -274,6 +274,7 @@ body {
 }
 
 .meun-price {
+	align-self: flex-end;
 	flex-shrink: 0;
 }
 
@@ -326,6 +327,7 @@ body {
 }
 
 .signage1 .meun-price {
+	align-self: initial;
 	margin-top: 7.0rem;
 	padding-top: 7.0rem;
 	border-top: 1px solid #dbdbdb;
@@ -452,7 +454,6 @@ body {
 
 .signage3 .meun-price {
 	font-size: 5.0rem;
-	text-align: right;
 }
 
 .signage4 .meun-price-unit,
@@ -541,7 +542,7 @@ body {
 
 .signage5 .meun-price {
 	font-size: 4.0rem;
-	text-align: right;
+	align-self: center;
 }
 
 
@@ -653,11 +654,15 @@ body {
 
 	
 	/* signage3 */
-	.signage3 .menu-group {
+	.signage3 .menu-group,
+	.signage4 .menu-group,
+	.signage5 .menu-group {
 		padding: 0 3.0rem;
 	}
 
-	.signage3 .menu-info-group {
+	.signage3 .menu-info-group,
+	.signage4 .menu-info-group,
+	.signage5 .menu-info-group {
 		margin-left: 2.0rem;
 	}
 
@@ -671,28 +676,12 @@ body {
 	}
 
 	/* signage4 */
-	.signage4 .menu-group {
-		padding: 0 3.0rem;
-	}
-
-	.signage4 .menu-info-group {
-		margin-left: 2.0rem;
-	}
-
 	.signage4 .menu-img {
 		width: 180px;
 		height: 180px;
 	}
 
 	/* signage5 */
-	.signage5 .menu-group {
-		padding: 0 3.0rem;
-	}
-
-	.signage5 .menu-info-group {
-		margin-left: 2.0rem;
-	}
-
 	.signage5 .menu-img {
 		width: 100px;
 		height: 100px;
@@ -723,6 +712,7 @@ body {
 	}
 
 	[class*='signage'] .menu-info-group {
+		align-items: flex-start;
 		flex-direction: column;
 		flex-grow: 1;
 	}
@@ -771,6 +761,11 @@ body {
 		padding-top: 3.5rem;
 	}
 
+	/* signage2 */
+	.signage2 .menu-info-group {
+		padding: 3.2rem 1.0rem;
+	}
+
 	/* signage3 */
 	.signage3 .menu-item {
 		padding: 2.8rem 0 2.7rem;
@@ -800,12 +795,6 @@ body {
 	}
 
 	/* signage5 */
-	.signage5 .menu-info-group {
-		flex-direction: column;
-		align-items: flex-end;
-		justify-content: space-between;
-	}
-
 	.signage5 .menu-item {
 		padding: 0.9rem 0 0.8rem;
 	}
